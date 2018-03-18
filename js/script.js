@@ -10,6 +10,7 @@ $(function() {
     lastItem.after(firstItem);
     carouselList.css({ marginLeft: 0 });
   }
+
   $(".arrow-right").on("click", function() {
     clearInterval(carouselInterval);
     carouselList.animate({ marginLeft: -800 }, 1000, moveFirstSlide);
