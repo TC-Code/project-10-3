@@ -10,6 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 #carousel {
@@ -19,12 +20,12 @@
   position: relative;
 }
 
-ul {
+.carousel__image-list {
   list-style: none;
   width: 4000px;
 }
 
-li {
+.image-list__item {
   width: 800px;
   list-style: none;
   float: left;
@@ -67,4 +68,27 @@ li {
   border-left: 8px #fff solid;
   border-bottom: 8px #fff solid;
   opacity: 0.7;
+}
+
+
+.control-dots {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  bottom: 5px;
+  left: 325px;
+}
+
+.contol-dots__dot {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  margin: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.active {
+	background-color: #ff0000;
 }
